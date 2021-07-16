@@ -1,247 +1,266 @@
 /* fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
 /* base style or utility*/
 body {
-    font-family: 'Poppins', sans-serif;
-    /* background-color: #E5E5E5; */
-    margin: 0;
-    padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #e5e5e5;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
-.top-style{
-    background-color:#005ff8;
-    height: 667px;
-    display:flex;
+.top-style {
+  background-color: #005ff8;
+  height: 550px;
+  display: flex;
+}
 
-}   
-
-h1{
-    font-size: 64px;
-    font-weight: 700;
-    color: #FFFFFF;
+h1 {
+  font-size: 64px;
+  font-weight: 700;
+  color: #ffffff;
 }
 
 .link-btn {
-    text-decoration: none;
-    background-color: #E02C6D;
-    color: white;
-    font-size: 1em;
-    font-weight: 500;
-    padding: .8em 2.5em;
-    
-    
-  }
-
-  .football-info {
-    
-   width: 80%;
-   margin-top: 3%;
-    
-  }
-  
-  .football-info img {
-    width: 80%;
+  text-decoration: none;
+  background-color: #e02c6d;
+  color: white;
+  font-size: 1em;
+  font-weight: 500;
+  padding: 0.8em 2em;
+  transition: all 0.5s;
+  cursor: pointer;
 }
-  h1, a{
-    margin-left: 35%;
+.link-btn:after {
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.link-btn:hover {
+  padding: 10px;
+  margin: 10px;
+  opacity: 1;
+  right: 0;
+}
+
+.football-info {
+  width: 80%;
+  margin-top: 3%;
+}
+
+.football-info img {
+  width: 100%;
+}
+h1,
+a {
+  margin-left: 2%;
 }
 
 main {
-display: flex;
-flex-direction: column;
-align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 .container {
-width: 870px; 
-background-color: #FDFDFD;
-padding: 1em 1em;
-margin-top: 2em; 
-
+  width: 100%;
+  background-color: #fdfdfd;
+  padding: 1em 1em;
+  margin-top: 2em;
 }
 
-.section-title{
-    color: #562EFF;
-    font-size: 24px;
-    margin-top: 3px;
+.section-title {
+  color: #562eff;
+  font-size: 24px;
+  margin-top: 3px;
 }
 /* top players style */
-
-
 
 /* ----------------------------
     top blogs styles 
     ---------------------------*/
-    
 
 /*  ---------------------
     courses styles
     --------------------- */
 
-
 /* player style */
-.players-info{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.players-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 .player {
-    width: 80%;
-    margin: 15px;
-    padding: 15px;
-    border: 15px;
-    box-shadow: 10px 10px 40px #e4dfdf;
-  }
-  
-  .player img {
-    width: 100%;
-    
-  }
-  h3{
-    font-size: 28px;
-    color: #18191F;
-  }
+  width: 80%;
+  margin: 15px;
+  padding: 15px;
+  border: 15px;
+  box-shadow: 10px 10px 40px #e4dfdf;
+}
 
+.player img {
+  width: 100%;
+}
+h3 {
+  font-size: 28px;
+  color: #18191f;
+}
 
+.highlight {
+  height: 550px;
+  display: flex;
+}
 
-  .highlight{
-    display: flex;
-} 
-.highlight-title{
-    font-size: 48px;
-    color: #0A0826;
-    
+.highlight-title {
+  font-size: 48px;
+  color: #0a0826;
 }
 .highlight-info {
-    margin-top: 10%;
-    width: 50%;
-    padding-left: 5%;
-  }
-  
-  .highlight-info img {
-    width: 70%;
-  }
+  margin-top: 10%;
+  width: 50%;
+  padding-left: 5%;
+}
+
+.highlight-info img {
+  width: 70%;
+}
 
 /* social */
-.social-connect{
-    margin-top: 10%;
-  
+.social-connect {
+  margin-top: 5%;
 }
 .social-info ul {
-
-list-style-type: none;
-display: inline;
-list-style-type: none;
+  list-style-type: none;
+  display: inline;
+  list-style-type: none;
 }
 #social-icon {
-    margin-left: 30%;
+  margin-left: 30%;
 }
 
-.social-info li a{
-    float: left;
-    margin: 2%;
-    padding: 2%;
-    border-radius: 50%;
-    background-color: #E7E7E8;
-    color: #969BAB;
-  }
+.social-info li a {
+  float: left;
+  margin: 2%;
+  padding: 2%;
+  border-radius: 50%;
+  /* background-color: #e7e7e8; */
+  background-color: royalblue;
+  color: #969bab;
+}
 
-  .social-info img{
-      width: 80%;
-  }
- /* sponsored area styling  */
- 
-  .partners{
-      /* display: flex; */
-      background-color: #d8d7d7;
-      margin-left: 10%;
-      margin-right: 10%;
+.social-info img {
+  width: 80%;
+}
+/* sponsored area styling  */
 
-  }
-  h2{
-    color: rgb(0, 183, 255);
-    text-align: center;
-    margin: 0;
-    padding: 0;
-  }
-  .sponsored-partner ul {
-    list-style-type: none;
-    display: flex;
-    margin-left: 0;
-    margin-right: 0;
-    flex-direction: row;
-    width: 90%;
-    }
+.partners {
+  /* display: flex; */
+  background-color: #d8d7d7;
+}
+h2 {
+  color: rgb(0, 183, 255);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.sponsored-partner ul {
+  list-style-type: none;
+  display: flex;
+  margin-left: 0;
+  margin-right: 0;
+  flex-direction: row;
+  width: 90%;
+}
 
-    .sponsored-partner li a{
-        display: flex;
-       
-      }
-    
-    .sponsored-partner img{
-        width: 80%;
-    }
+.sponsored-partner li a {
+  display: flex;
+}
+
+.sponsored-partner img {
+  width: 80%;
+}
 
 /* begin contact */
 .contact {
-    text-align: center;
-    margin-top: 5%;
-  }
-  
-  .contact-body {
-    line-height: 2rem;
-    color: rgb(0, 183, 255);
-  }
-  
-  .contact input,
-  .contact textarea {
-    display: inline;
-    width: 500px;
-    padding: 5px 10px;
-    margin: 5px;
-  }
-  
-  /* end contact */
-
-    .footer-color{
-    padding-top: 2%;
-    font-size: 18px;
-    text-align:center;
-    background-color: #005ff8;
-    height: 80px;
+  text-align: center;
+  margin-top: 5%;
 }
-  /*  ---------------------
+
+.contact-body {
+  line-height: 2rem;
+  color: rgb(0, 183, 255);
+}
+
+.contact input,
+.contact textarea {
+  display: inline;
+  width: 50%;
+  padding: 5px 10px;
+  margin: 5px;
+}
+
+/* end contact */
+
+.footer-color {
+  padding-top: 2%;
+  font-size: 18px;
+  text-align: center;
+  background-color: #005ff8;
+  height: 80px;
+}
+
+.footer-color {
+  padding-top: 2%;
+  font-size: 18px;
+  text-align: center;
+  background-color: #005ff8;
+  height: 80px;
+}
+/*  ---------------------
         Media Queries
     --------------------- */
-    
-    /* Mobile Devices */
-    @media only screen and (max-width:668px) {
-        .top-style{
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            width: 100%;
-        }
-        .football-info{
-            
-            background-color: #0A0826;
-            
-        }
-        .football-info img{
-            display: flex;
-            
-        }
-        
-    }
 
-    /* tablet devices */
-/*     @media only screen and(min-width:688px) and (max-width:992px) {
-        .container{
-            width: 100%;
-        }
-         .players, .courses{
-            grid-template-columns: repeat(2, 1fr);
-        }
+/* Mobile Devices */
+@media only screen and (max-width: 360px) {
+  .top-style {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  h1 {
+    font-size: 34px;
+    font-weight: 500;
+    color: #ffffff;
+  }
+  .top-image {
+    margin-top: 10%;
+  }
 
-        .blogs{
-            grid-template-columns: repeat(1, 1fr);
-        } 
-    } */
+  .players-info {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-around;
+  }
+
+  .highlight {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .highlight-info {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-around;
+  }
+}
+
+/* tablet devices */
+@media only screen and (max-width: 768px) {
+  .players-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+  }
+}
